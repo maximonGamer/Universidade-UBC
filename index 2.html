@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mogi das cruzes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+
+    <header class="bg-light header"
+        <section>
+            <span class="span-1">Portal   </span>
+            <span class="span-2">Jornal A verdade</span>
+            <section class="links"
+            <a href="">Home</a>
+            <a href="http://127.0.0.1:3000/quarto Html contatos/index.html">Contatos</a>
+            <a href="http://127.0.0.1:3000/sexto  HTML instagram dos criadores/index.html">Instagram dos criadores</a>
+            <a href="http://127.0.0.1:3000/Segundo html forum de discussão/index 2.html">Forum de discusão</a>
+            <a href="http://127.0.0.1:3000/terceiro html motivo da criação/index.html">Motivo da criação</a>
+            <a href="http://127.0.0.1:3000/quinto HTML  Noticias abertas para publico/index.html">Noticias abertas para publico </a>
+            </a>
+            
+
+        </section>
+    </header>
+    <main>
+   
+
+        <div class="container text-center">
+            <div class="row">
+              <div class="col">
+                <section class="secao-1">
+                    <div class="container"> 
+                        <h2>Fórum de discussão</h2>
+                        <div class="thread"> 
+                            <h2>Para a melhoria de nossa cidade, informe o que você deseja para o futuro e compartilhe com o público:</h2>
+                            <button onclick="toggleRespostas(0)">Mostrar resposta</button>
+                            <div style="display:none;" class="respostas"> 
+                               
+                                <hr>
+                                <form> 
+                                    <textarea></textarea>
+                                    <input type="submit" name="acao" value="Enviar"/>
+                                </form>
+                            </div>    
+                        </div><!--thread-->
+                        
+                        <!-- Outras threads aqui... -->
+                    
+                        <a href="http://127.0.0.1:3000/HTML inicio do site/index.html" class="btn btn-info link-a-1">Clique para voltar ao início do site</a>
+                    </div>
+                    
+                    <script>
+                        function toggleRespostas(index) {
+                            var respostas = document.querySelectorAll('.respostas');
+                            respostas[index].style.display = (respostas[index].style.display === 'none') ? 'block' : 'none';
+                        }
+                    
+                        var forms = document.querySelectorAll('form');
+                    
+                        for (var i = 0; i < forms.length; i++) {
+                            forms[i].addEventListener('submit', function(e) {
+                                e.preventDefault();
+                                var conteudo = this.querySelector('textarea').value;
+                                var resposta = document.createElement('p');
+                                resposta.textContent = conteudo;
+                                this.parentElement.insertBefore(resposta, this);
+                            });
+                        }
+                    </script>
+                    
+                     
+                </section>
+                
+              </div>
+              <div class="col">
+                <section class="secao-2">
+                    <div class="img">
+                        <img src="Fotos/Coluna-Olhar-Digital-Dezembro--scaled.jpg" alt="">
+                        <p>&copy; 2024 Seu Jornal Online</p>
+
+
+                        <section class="secao-3">
+                            <div class="img">
+                                <img src="Fotos/Mogi das cruzes_updated.jpg" alt="">
+                                <p>&copy; Universidade Braz cubaz: https://www.brazcubas.edu.br</p>
+                    </div>
+                </section>
+              </div>
+            </div>
+          </div>
+
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+body{
+    background-color: rgb(216, 216, 216);
+}
+.header{
+     padding: 20px;
+}
+.links{
+
+    display: inline;
+    margin-left: 900px;
+}
+.links a{
+margin-left: 10px;
+text-decoration: none;
+font-weight: bold;
+color: rgb(83, 1, 83);
+padding: 5px;
+}
+
+.span-1 , .span-2{
+        font-weight: bold;
+        font-size: xxx-large;
+}
+.span-1{
+    color: rgb(0, 0, 0);
+}
+.span-2{
+    color: rgb(194, 2, 2);
+}
+
+.links a:hover{
+color: black;
+border-top: 2px solid black;
+border-bottom: 2px solid rgb(185, 2, 2);
+}
+
+.link-a-1{
+    background-color: rgb(119, 30, 202);
+    border: black;
+}
+
+.secao-1{
+    width: 600px;
+   
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.secao-2{
+    width: 600px;
+    
+    
+    margin-top: 50px;
+}
+
+.secao-3{
+    width: 0px;
+   
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+.img{
+    width: 500px;
+    margin: 0 auto;
+}
+
+.img img{
+    width: 100%;
+    border-radius: 30%;
+}
+
+
+
+
+*{margin:0;
+    padding:0;
+   box-sizing: border-box;
+  }
+  .container > h2{
+ background-color: rgb(179, 172, 172);
+padding: 10px 0;}
+
+.thread{
+  padding: 10px;
+  border: 1px dashed #ccc; 
+}
+.respostas {
+ margin:0 10px;
+}
+.respostas p{ 
+font-size: 18px;
+color: #333;
+}
+
+textarea{ 
+ width: 100%;
+ height: 40px;
+ border:1px solid #ccc;
+}
